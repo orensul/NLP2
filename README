@@ -1,0 +1,22 @@
+Natural language processing ex2
+
+in the py file you can find our implementation to the
+brown corpus.
+to use our class you should create an instance of
+BrownCorpus class with the following params
+	- percentage: the percentage of the data that you want 
+					to use for the test validation
+	- specialPower: the kind of viterbi algorithm that you
+					want to use. 
+		options are
+			- '' - regular viterbi algorithm
+			- 'PLUS_ONE' - add 1 smoothing viterbi	
+			- 'PSEUDO' - viterbi algorithm with pseudo words for non-frequent words
+			- 'PSEUDO_PLUS' - same as pseudo with +1 smoothing.
+
+to find the tag that maximize the word we can use the function get_max_tag("hello")			
+			
+to evaluate specific sentence you can run bc.viterbi("My dog barks") and you will
+get a string of tags that represent every word in your sentence.
+
+all the implementation using python dictionaries with some documentation on the relevant functions.
